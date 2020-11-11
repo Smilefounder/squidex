@@ -4,12 +4,16 @@
 *.vs
 *.log
 
+.awCache
+
 .vscode
+.awcache
 
 # Build results
-build/
 bin/
+build/
 obj/
+out/
 publish/
 
 # Test Output
@@ -18,9 +22,11 @@ _test-output/
 # NodeJS 
 node_modules/
 
-# Scripts (should be copied from node_modules on build)
-**/wwwroot/scripts/**/*.*
+/backend/src/Squidex/Assets
 
-/src/Squidex/appsettings.Development.json
-/src/Squidex/Assets
-/src/Squidex/Properties/launchSettings.json
+appsettings.Development.json
+appsettings.Production.json
+launchSettings.json
+
+/frontend/app-config/localhost-key.pem
+/frontend/app-config/localhost.pem

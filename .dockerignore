@@ -8,17 +8,29 @@
 .git
 
 # Build results
-**/bin/
-**/obj/
-**/publish/
+**/bin
+**/build
+**/obj
+**/out
+**/publish
 
 # Test Output
-**/_test-output/
+**/_test-output
 
 # NodeJS 
-**/node_modules/
+**/node_modules
 
-# Scripts (should be copied from node_modules on build)
-**/wwwroot/scripts/**/*.*
+backend/src/Squidex/Assets/*.*
 
-**/src/Squidex/appsettings.Development.json
+**/appsettings.Development.json
+**/appsettings.Production.json
+**/launchSettings.json
+
+# Build
+.drone.yml
+
+build.ps1
+build.sh
+
+# Documentation
+CHANGELOG.md
